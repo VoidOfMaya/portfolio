@@ -1,0 +1,17 @@
+.mainContainer{
+  justify-self: center;
+  border: 1px solid black;
+  width: 100vw;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+}
+.content{
+  width: 80%;
+  align-self: center;
+}
+@media (max-width < 851px) {
+  .mainContainer{
+    width: 100%;
+  }
+}

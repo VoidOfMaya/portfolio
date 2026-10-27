@@ -1,0 +1,13 @@
+.main{
+    display: flex;
+    
+}
+.photo{
+    border: 1px solid red;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
