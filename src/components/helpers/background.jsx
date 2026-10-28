@@ -45,6 +45,7 @@ const Background = ({}) =>{
         </svg>
     )
 }
+
 export{
     Background
 }

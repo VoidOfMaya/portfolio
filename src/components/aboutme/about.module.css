@@ -1,13 +1,18 @@
 .main{
     display: flex;
+    gap: 10px;
     
 }
 .photo{
-    border: 1px solid red;
     width: 200px;
     height: 200px;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 50%;
+}
+.name{
+    font-size: 52px;
+    font-weight: 900;
+    color: rgb(117, 116, 116);
 }

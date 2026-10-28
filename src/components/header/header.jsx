@@ -20,7 +20,7 @@ const Header = ({})=>{
                     <Icon.Github />
                 </div>   
                 <div>
-                    <Icon.Gmail /> lol
+                    <Icon.Gmail />
                 </div>          
             </div>
 
