@@ -16,7 +16,9 @@ body{
   color: rgb(75, 75, 75);
   
 }
-
+#root::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, newer Chromium-based browsers */
+}
 /*.dm-sans-font {
   font-family: "DM Sans", sans-serif;
   font-optical-sizing: auto;
