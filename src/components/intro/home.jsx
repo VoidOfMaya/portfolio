@@ -6,12 +6,16 @@ import style from './home.module.css'
 const Intro = ({})=>{
     return(
         <main className={style.main}>
-            <h1>
-                <Pointer content='~>' size='32' />{"Full stack developer"}
-                
-            </h1>
+            <div>
+                <h1 >@ Maya Mazarib</h1> 
+                <h2>
+                    <Pointer content='~>' size='32' />{"Full stack developer"}
+                    
+                </h2>               
+            </div>
+
             <div className={style.content}>
-                <p>a self taught developer building full stack web applications</p>
+                <p>A self taught developer building full stack web applications</p>
                 <p>from the drawing board throught to deployment </p>
                 <p>with a focus on:</p>
                 <ul style={{listStyleType: 'none'}}>
@@ -24,6 +28,16 @@ const Intro = ({})=>{
                         responsive design
                     </li>
                 </ul>  
+                <div>My stack</div>
+                <div style={{display: 'flex', alignItems: 'center', gap: '10px'}}>
+                    <Icon.Postgres size={50} />
+                    <Icon.Express size={90}/>
+                    <Icon.React size={50}/>
+                    <Icon.Node size={80}/>
+                </div>
+            </div>
+            <div className={style.scrollIndicator}>
+                <Icon.ScrollDown  size={52}/>
             </div>
         </main>
     )

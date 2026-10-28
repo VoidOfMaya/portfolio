@@ -5,6 +5,7 @@
     justify-content: center;
     width: 100%;
     flex-direction: column;
+    position: relative;
     
 }
 .content{
@@ -14,4 +15,21 @@
     font-size: large;
     border-radius: 15px;
     width: fit-content;
+}
+.scrollIndicator{
+    animation: pulse 1s ease-in-out infinite;
+    position: absolute;
+    bottom: 0;
+    right: 50%;
+}
+@keyframes pulse {
+    0%{
+        opacity: .5;
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: .5;
+    }
 }
