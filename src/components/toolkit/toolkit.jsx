@@ -18,6 +18,7 @@ const Tools = ({})=>{
             <ToolCard name={"Git"} Component={Icon.Git} size={50}/>
             <ToolCard name={"Npm"} Component={Icon.Npm} size={50}/>
             <ToolCard name={"Rest API"} Component={Icon.RestApi} size={50} />
+            <ToolCard name={"Socket.io"} Component={Icon.Sockets} size={50} />
         </div>
         <Partical.Static particalColor={'red'} linkColor={'green'}/> 
     </main>

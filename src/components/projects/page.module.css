@@ -11,10 +11,14 @@
 }
 .contentContainer{
     flex: 3;
+    margin: 15px;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    position: relative;
 }
 .linksContainer{
     display: flex;
     align-self: end;
+    position: absolute;
 }
