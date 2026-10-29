@@ -1,7 +1,7 @@
 import { Pointer } from '../helpers/cliArrow';
 import { Icon } from '../helpers/icons';
 import style from './page.module.css';
-const ProjectCard =({name ,photoUrl ,content, github, livePreview, size = 400})=>{
+const ProjectCard =({name ,photoUrl ,content, github, livePreview, size = 350})=>{
     return(
         <main className={style.card}>
             <div className={style.photoContainer}>
@@ -11,7 +11,7 @@ const ProjectCard =({name ,photoUrl ,content, github, livePreview, size = 400})=
                     loading='lazy'
                     style={{
                         objectFit:'cover',
-                        borderRadius: ' 15px 0px 0px 15px',
+                        borderRadius: ' 20px 0px 0px 20px',
                         cursor: 'pointer',
                     }}
                 />

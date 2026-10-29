@@ -3,7 +3,7 @@ import style from './about.module.css'
 
 const About = ({})=>{
     return(
-        <main className={style.main}>
+        <section className={style.main}>
             <div className={style.photo}>
                 <img src='src/assets/images.jpg' alt='My photo'
                     height='200px'
@@ -19,7 +19,7 @@ const About = ({})=>{
                 </p>
                 
                 </div>
-        </main>
+        </section>
     )
 }
 export{

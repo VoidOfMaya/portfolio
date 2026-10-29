@@ -6,20 +6,23 @@ import {ParticalSys } from './components/particals/particals'
 import { About } from './components/aboutme/aboutme'
 import { Partical } from './components/particals/staticAnchor'
 import { ProjectPage } from './components/projects/projectPage'
+import { ContactPage } from './components/contactme/contactMe'
 
 
 function App() {
   const pages = [Intro]
   return (
-      <div className='mainContainer'>        
-        <main className='content'>
+      <main className='mainContainer'>        
+        <section className='content'>
             <Intro />   
             <ProjectPage />
-            <About />   
-        </main>
+            <About />
+            <ContactPage />   
+        </section>
         <Header /> 
+  
         <ParticalSys.ParBackground />
-      </div>       
+      </main>       
   )
 }
 
