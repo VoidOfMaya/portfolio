@@ -4,6 +4,8 @@ import { Header } from './components/header/header'
 import { Intro } from './components/intro/home'
 import {ParticalSys } from './components/particals/particals'
 import { About } from './components/aboutme/aboutme'
+import { Partical } from './components/particals/staticAnchor'
+import { ProjectPage } from './components/projects/projectPage'
 
 
 function App() {
@@ -12,12 +14,11 @@ function App() {
       <div className='mainContainer'>        
         <main className='content'>
             <Intro />   
- 
+            <ProjectPage />
             <About />   
         </main>
         <Header /> 
-        {/*<Background /> */}
-        <ParticalSys.ParBackground />   
+        <ParticalSys.ParBackground />
       </div>       
   )
 }

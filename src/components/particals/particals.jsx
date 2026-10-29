@@ -48,7 +48,7 @@ const ParBackground =({particalColor,linkColor,background})=> {
          },
         fullScreen:{
             enable: true,
-            zIndex: -1,
+            zIndex: -2,
         }
     }),
     [],
@@ -60,10 +60,9 @@ const ParBackground =({particalColor,linkColor,background})=> {
     </ParticlesProvider>
   );
 }
+
 const ParticalSys = {
     ParBackground,
-
-
 }
 export{
     ParticalSys

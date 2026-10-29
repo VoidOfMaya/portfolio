@@ -12,7 +12,7 @@ const About = ({})=>{
                 />
             </div>
             <div className={style.about}>
-                <div className={style.name}>@M Mazarib</div>
+                <div className={style.name}>@Maya Mazarib</div>
                 <p style={{marginLeft: "10px"}}>
                     i am a fullstack software developer building fullstack applications
                     from  the drawing board to deployment

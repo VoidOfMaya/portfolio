@@ -21,12 +21,13 @@ const Intro = ({})=>{
                 <p>with a focus on:</p>
                 <ul style={{listStyleType: 'none'}}>
                     <li>
-                        <Pointer />
-                        clean and solid code
+                        <Pointer /> sound engineering paractices
                     </li>
                     <li>
-                        <Pointer />
-                        responsive design
+                        <Pointer />clean and solid code
+                    </li>
+                    <li>
+                        <Pointer />responsive design
                     </li>
                 </ul>  
                 <div>My stack</div>
