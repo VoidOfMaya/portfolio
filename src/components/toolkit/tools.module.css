@@ -1,0 +1,16 @@
+.content{
+    border: 1px solid rgb(240, 240, 240);
+    background-color: white;
+    padding: 10px;
+    font-size: large;
+    border-radius: 15px;
+    width: fit-content;
+    display: flex;
+}
+
+.toolCard{
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+    justify-content: center;
+}

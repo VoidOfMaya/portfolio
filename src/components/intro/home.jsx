@@ -1,5 +1,6 @@
 import { Pointer } from '../helpers/cliArrow'
 import { Icon } from '../helpers/icons'
+import { Tools } from '../toolkit/toolkit'
 import style from './home.module.css'
 
 
@@ -36,6 +37,7 @@ const Intro = ({})=>{
                     <Icon.Node size={80}/>
                 </div>
             </div>
+            <Tools />
             <div className={style.scrollIndicator}>
                 <Icon.ScrollDown  size={52}/>
             </div>

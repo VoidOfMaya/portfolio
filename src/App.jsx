@@ -2,17 +2,17 @@ import { useState } from 'react'
 import './App.css'
 import { Header } from './components/header/header'
 import { Intro } from './components/intro/home'
-import { Background } from './components/helpers/background'
-import { Carousel } from './components/carousel/carousel'
 import {ParticalSys } from './components/particals/particals'
 import { About } from './components/aboutme/aboutme'
+
 
 function App() {
   const pages = [Intro]
   return (
       <div className='mainContainer'>        
         <main className='content'>
-            <Intro />     
+            <Intro />   
+ 
             <About />   
         </main>
         <Header /> 
