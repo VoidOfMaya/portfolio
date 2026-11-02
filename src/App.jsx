@@ -17,7 +17,7 @@ function App() {
             <Intro />   
             <ProjectPage />
             <About />
-            <ContactPage />   
+            <ContactPage />
         </section>
         <Header /> 
   

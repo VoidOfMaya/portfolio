@@ -1,4 +1,4 @@
-import { useCallback, useMemo } from "react";
+import { useCallback, useEffect, useMemo, useState } from "react";
 import Particles, { ParticlesProvider } from "@tsparticles/react";
 import { loadSlim } from "@tsparticles/slim";
 
@@ -7,8 +7,11 @@ const particlesInit = async (engine) => {
 };
 
 const ParBackground =({particalColor,linkColor,background})=> {
+  
+  const [status, setStatus] = useState('loading') ; 
   const particlesLoaded = useCallback(async (container) => {
    //console.log("Particles container loaded", container);
+   if(container) setStatus('loaded');
   }, []);
 
   const options = useMemo(
@@ -53,14 +56,20 @@ const ParBackground =({particalColor,linkColor,background})=> {
     }),
     [],
   );
+  useEffect(()=>{
+    setStatus('loading')
+  },[])
 
-  return (
-    <ParticlesProvider init={particlesInit}>
-      <Particles id="tsparticles" particlesLoaded={particlesLoaded} options={options} />
-    </ParticlesProvider>
-  );
+
+ 
+    return (
+        <ParticlesProvider init={particlesInit}>
+            <Particles id="tsparticles" particlesLoaded={particlesLoaded} options={options} />
+        </ParticlesProvider>
+    );    
+
+
 }
-
 const ParticalSys = {
     ParBackground,
 }
