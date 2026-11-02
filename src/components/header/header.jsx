@@ -21,7 +21,10 @@ const Header = ({})=>{
                 </div>   
                 <div>
                     <Icon.Gmail />
-                </div>          
+                </div>     
+                <div>
+                    <Icon.MyResume />
+                </div>     
             </div>
 
         </main>

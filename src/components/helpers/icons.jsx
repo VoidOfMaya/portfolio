@@ -546,6 +546,27 @@ const ScrollDown = ({fn = null, color ='#909091', focusColor='#181616', size=25,
         </svg>
     )
 }
+const MyResume =({fn = null, color ='#909091', focusColor='#181616', size=25, title='grab a copy of my resume'})=>{
+    const [focuse, setFocus]= useState(false);
+    return(
+        <svg xmlns="http://www.w3.org/2000/svg" 
+            viewBox="0 0 24 24" 
+            height={`${size}px`}
+            width={`${size}px`}
+            style={{cursor: 'pointer'}} 
+            onClick={()=> fn? fn(): null}   
+            fill={focuse? focusColor : color}
+                    onMouseEnter={()=>setFocus(true)}
+                    onMouseLeave={()=>setFocus(false)}
+        >
+            <title>{title}</title>
+            <path d="M4,21q-0.82,0-1.41-0.59T2,19V8Q2,7.18 2.59,6.59T4,6H8V4Q8,3.17 
+            8.59,2.59T10,2h4q0.83,0 1.41,0.59T16,4V6h4q0.83,0 1.41,0.59Q22,7.18 
+            22,8V19q0,0.82-0.59,1.41T20,21H4Zm0-2H20V8H4V19ZM10,6h4V4H10V6ZM4,19V8V19Z"
+            />
+        </svg>
+    )
+}
 const Icon = {
     Linkedin,
     Github,
@@ -565,7 +586,8 @@ const Icon = {
     Npm,
     RestApi,
     Sockets,
-    ScrollDown
+    ScrollDown,
+    MyResume
     
 }
 
