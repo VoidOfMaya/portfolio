@@ -21,7 +21,7 @@ function App() {
         </section>
         <Header /> 
   
-        <ParticalSys.ParBackground />
+        {/*<ParticalSys.ParBackground />*/}
       </main>       
   )
 }
